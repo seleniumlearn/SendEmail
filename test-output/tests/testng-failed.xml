@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [tests]">
+  <parameter name="testSuiteXML" value="SearchTest.xml"/>
+  <parameter name="testInterfaceXML" value="SearchInterface.xml"/>
+  <test name="Bing-Search-Sample-Test(failed)">
+    <parameter name="testSuiteXML" value="SearchTest.xml"/>
+    <parameter name="testInterfaceXML" value="SearchInterface.xml"/>
+    <classes>
+      <class name="sendEmail.Inclue">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="twitter"/>
+        </methods>
+      </class> <!-- sendEmail.Inclue -->
+    </classes>
+  </test> <!-- Bing-Search-Sample-Test(failed) -->
+</suite> <!-- Failed suite [tests] -->
